@@ -1,0 +1,190 @@
+@import "normalize.styl"
+@import "nib"
+@import "icon.styl"
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+
+fondo = #2D3945
+link = #468CBF
+blanco = #ffffff
+rojo = #DF392E
+texto = #5d6e7f
+texto1 = #6F849B
+
+
+a
+	text-decoration none
+
+body
+	font-family 'Open Sans', sans-serif
+	font-size 16px
+	background-image url(".././image/background.jpg")
+	background-repeat: no-repeat;
+	background-size: 100% 1600px;
+
+figure
+	margin 0
+img
+	vertical-align top
+
+aside
+	display inline-block
+ul
+	margin 0
+	padding 0
+				
+h2
+h3
+h4
+	margin 0
+	text-transform uppercase
+
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
+.left
+	float left
+.right 
+	float right
+.bold
+	font-weight bold
+.round
+	border-radius 50%
+.border
+	border-radius 10px
+
+.header
+	margin 0 auto
+	width 100%
+	background fondo
+	height auto
+.container
+	padding 0 10px
+	
+.logo
+	figure
+		padding-bottom 5px
+		border-bottom 3px solid rojo
+
+		img
+			margin 0 auto
+			width 90%
+			background rojo
+			width 70px
+			display block
+.menu
+	background fondo
+	display none
+	.tab
+		text-align center
+		text-transform uppercase
+		a
+			color blanco
+			height 50px
+			line-height 50px
+			display block
+
+			&:hover
+				background #000
+				border-radius 10px 10px 0 0
+
+.display-menu
+	background rojo
+	border 5px solid rojo
+	border-radius 5px
+	color blanco
+	font-size 25px
+	position absolute
+	right 10px
+	top 20px
+
+.logotipo
+	text-align center
+	figure
+		display inline-block
+		max-width 90%
+		img
+			width 100%
+.contener
+	background blanco
+	color texto
+	margin-top 40px
+	.title
+		text-align center
+		color rojo
+		font-size 28px
+		padding 1em .5em 1em .5em
+		font-weight bold
+
+	.subtitle
+		margin 0
+		color texto
+		font-size 16px
+		font-weight normal
+	.description
+		text-align justify
+		padding 0 1em
+		p 
+			margin 0
+			padding 0
+
+footer
+	background blanco
+	padding 2em 0
+
+	.contacto
+		text-align center
+		.title
+			color texto1
+			font-size 24px
+		.info
+			padding-bottom 5px
+			.ubica
+				font-weight bold
+				color rojo
+				font-size 18px
+				&:before
+					content "\e704"
+			
+			.ubica
+				&:before
+					font-family "iconos"
+					display inline-block
+					text-shadow none
+					color rojo
+					padding 0.2em
+
+			.address
+			.phone
+			.mail
+				color #333
+				&:before
+					font-family "armenta"
+					display inline-block
+					text-shadow none
+					color rojo
+
+			a 
+				color link
+
+			.phone
+				&:before
+						content "\e601"
+			.address
+				&:before
+						content "\e600"
+			.mail
+				&:before
+						content "\e602"
+		p 
+			margin 0
+
+
+
+
+
+
+
+
